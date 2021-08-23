@@ -15,12 +15,10 @@
         <link rel='icon' type='' href=''>
         <!--link to the stylesheet for webpage-->
         <link rel="stylesheet" type='text/css' href='main.css'>
-        <!--link to additional webbased-font on the internet, i.e Google Web-font-->
-        <link >
+        <!--script to additional webbased-font on the internet, i.e Google Web-font-->
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!--header tag-->
-        <header>
             <!--nav tag-->
             <nav>
                 <!--left nav tag-->
@@ -36,6 +34,7 @@
                     </ul>
                 </div>
                 <!--right nav tag -->
+
                 <div class='nav-right'>
                     <!--div for search box-->
                     <div class="search-box">
@@ -49,9 +48,19 @@
                         <!--image for user-->
                         <img src='images/dprofile-pic.png' alt='userlogo'>
                     </div>
+                    <!--settings menu on nav tag-->
+                <div class="settings-menu">
+                    <div class="user-profile">
+                        <img src="images/dprofile-pic.png">
+                        <div>
+                            <p>Michaels Hospitals</p>
+                            <a href="#">see your profile</a>
+                        </div>
+                    </div> 
                 </div>
+                </div>
+                
             </nav>
-        </header>
 
         <div class="container-1">
             <!--left sidebar of container-->
@@ -60,8 +69,8 @@
                     <a href='news.html'><img src='images/dnews.png' alt='news'>Health News</a>
                     <a href='centres.html'><img src='images/dfriends.png' alt='centres'>Hospitals</a>
                     <a href='groups.html'><img src='images/dgroup.png' alt='groups'>Group</a>
-                    <a href='collaborate.html'><img src='images/dmarketplace.png'>Colloborate</a>
-                    <a href='discoveries.html'><img src='images/dvideo.png'>Discoveries</a>
+                    <a href='collaborate.html'><img src='images/dmarketplace.png' alt='collaboratelogo'>Colloborate</a>
+                    <a href='discoveries.html'><img src='images/dvideo.png' alt='discoverlogo'>Discoveries</a>
                     <a href='more.html'>See More</a>
                 </div>
                 <div class="pra-leftside-links">
@@ -74,18 +83,323 @@
                     <a href="practicelist.html">Full Practice List</a>
                 </div>
             </div>
+
             <!--mainbar of container-->
             <div class='main-content'>
             
+                <div class="story-gallery">
+                    <div class="story story-1">
+                        <img src="images/dupload.png" alt="">
+                        <p>Miracle Story</p>
+                    </div>
+                    <div class="story story-2">
+                        <img src="images/dmember-1.png" alt="">
+                        <p>Alison Hospital</p>
+                    </div>
+                    <div class="story story-3">
+                        <img src="images/dmember-2.png" alt="">
+                        <p>Kubwa Clinic</p>
+                    </div>
+                    <div class="story story-4">
+                        <img src="images/dmember-3.png" alt="">
+                        <p>Mubi Homes</p>
+                    </div>
+                    <div class="story story-5">
+                        <img src="images/dmember-4.png" alt="">
+                        <p>Slavs Morturary</p>
+                    </div>
+                </div>
+                
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/dprofile-pic.png">
+                        <div>
+                            <p>Michaels Hospitals</p>
+                            <small>Public <i class="fas fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, Michales Hospitals">
+
+                        </textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/dlive-video.png">Live Video</a>
+                            <a href="#"><img src="images/dphoto.png">Photo/Video</a>
+                            <a href="#"><img src="images/dfeeling.png">Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--first post container-->
+                <div class="post-container">
+                    <div class="post-text">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <span>Aug. 21 2021 13:00</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Come in for <span>Free eye test</span> this weekend 27th August, 2021. 
+                        The total number to be serviced is five hundred and we start here <a href="#">#Michaels Website</a>
+                        <a href="#">#Facebook Page</a>
+                    </p>
+                    <img src="images/dfeed-image-1.png" alt="" class="post-img">
+                    <div class="post-reaction">
+                        <div class="reaction-icon">
+                            <div><img src="images/dlike-blue.png" alt="">120</div>
+                            <div><img src="images/dcomments.png" alt="">130</div>
+                            <div><img src="images/ddonated.png" alt="">60</div>
+                        </div>
+                        <div class="reaction-profile-icon">
+                            <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--second post container-->
+                <div class="post-container">
+                    <div class="post-text">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <span>Aug. 21 2021 13:00</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <p class="post-text">Remember <span>Green Dashcort?</span> with the help of your donation he was successfully
+                        operated on, to open a bypass in his left ventricle vessel wall. Wish him welll in the comment box.
+                        <a href="#">Reach the Hospital</a> and <a href="#">Reach him personally</a>
+                    </p>
+                    <img src="images/dfeed-image-2.png" alt="" class="post-img">
+                    <div class="post-reaction">
+                        <div class="reaction-icon">
+                            <div><img src="images/dlike-blue.png" alt="">1200</div>
+                            <div><img src="images/dcomments.png" alt="">1000</div>
+                            <div><img src="images/ddonated.png" alt="">6000</div>
+                        </div>
+                        <div class="reaction-profile-icon">
+                            <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--third post container-->
+                <div class="post-container">
+                    <div class="post-text">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <span>Aug. 21 2021 13:00</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Thanks to you all we have expanded our outreach free programme in 3/6 
+                        geographical zones <span>Free Care</span> will continue it workd in rural areas.
+                        Let's know if you will be volunteering in the next work. 
+                        Don't worry it will be posted <a href="#">Here !</a>.
+                    </p>
+                    <img src="images/dfeed-image-3.png" alt="" class="post-img">
+                    <div class="post-reaction">
+                        <div class="reaction-icon">
+                            <div><img src="images/dlike-blue.png" alt="">1200</div>
+                            <div><img src="images/dcomments.png" alt="">1000</div>
+                            <div><img src="images/ddonated.png" alt="">6000</div>
+                        </div>
+                        <div class="reaction-profile-icon">
+                            <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--fourth post container-->
+                <div class="post-container">
+                    <div class="post-text">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <span>Aug. 21 2021 13:00</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Thanks to you all we have expanded our outreach free programme in 3/6 
+                        geographical zones <span>Free Care</span> will continue it workd in rural areas.
+                        Let's know if you will be volunteering in the next work. 
+                        Don't worry it will be posted <a href="#">Here !</a>.
+                    </p>
+                    <img src="images/dfeed-image-4.png" alt="" class="post-img">
+                    <div class="post-reaction">
+                        <div class="reaction-icon">
+                            <div><img src="images/dlike-blue.png" alt="">1200</div>
+                            <div><img src="images/dcomments.png" alt="">1000</div>
+                            <div><img src="images/ddonated.png" alt="">6000</div>
+                        </div>
+                        <div class="reaction-profile-icon">
+                            <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--fifth post container-->
+                <div class="post-container">
+                    <div class="post-text">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <span>Aug. 21 2021 13:00</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Thanks to you all we have expanded our outreach free programme in 3/6 
+                        geographical zones <span>Free Care</span> will continue it workd in rural areas.
+                        Let's know if you will be volunteering in the next work. 
+                        Don't worry it will be posted <a href="#">Here !</a>.
+                    </p>
+                    <img src="images/dfeed-image-4.png" alt="" class="post-img">
+                    <div class="post-reaction">
+                        <div class="reaction-icon">
+                            <div><img src="images/dlike-blue.png" alt="">1200</div>
+                            <div><img src="images/dcomments.png" alt="">1000</div>
+                            <div><img src="images/ddonated.png" alt="">6000</div>
+                        </div>
+                        <div class="reaction-profile-icon">
+                            <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--sixth post container-->
+                <div class="post-container">
+                    <div class="post-text">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <span>Aug. 21 2021 13:00</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Thanks to you all we have expanded our outreach free programme in 3/6 
+                        geographical zones <span>Free Care</span> will continue it workd in rural areas.
+                        Let's know if you will be volunteering in the next work. 
+                        Don't worry it will be posted <a href="#">Here !</a>.
+                    </p>
+                    <img src="images/dfeed-image-2.png" alt="" class="post-img">
+                    <div class="post-reaction">
+                        <div class="reaction-icon">
+                            <div><img src="images/dlike-blue.png" alt="">1200</div>
+                            <div><img src="images/dcomments.png" alt="">1000</div>
+                            <div><img src="images/ddonated.png" alt="">6000</div>
+                        </div>
+                        <div class="reaction-profile-icon">
+                            <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="laod-more-btn">Load More</button>
+
             </div>
+
             <!--right sidebar of contianer-->
             <div class='right-sidebar'>
-                <div class="title-rightside">
+                <!---->
+                <div class="right-sidebar-title">
                     <h4>Events</h4>
                     <a href="#">See All</a>
                 </div>
+                <!---->
+                <div class="event">
+                    <!---->
+                    <div class="left-event">
+                        <h3>20</h3>
+                        <span>August</span>
+                    </div>
+                    <!---->
+                    <div class="right-event">
+                        <h4>Alor Hall</h4>
+                        <p><i class="fas-fa-map-marker-alt"></i>Alor E-Hospital Launch</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <!---->
+                <div class="event">
+                    <!---->
+                    <div class="left-event">
+                        <h3>29</h3>
+                        <span>December</span>
+                    </div>
+                    <!---->
+                    <div class="right-event">
+                        <h4>Online</h4>
+                        <p><i class="fas-fa-map-marker-alt"></i>Meeting Paralytics</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <!--advertisement section of right side bar-->
+                <div class="right-sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="images\dadvertisement.png" alt="advert-1" class="sidebar-ads">
+                
+                <!---->
+                <div class="right-sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide chat</a>
+                </div>
+                <!---->
+                <div class="online-list">
+                    <!---->
+                    <div class="online">
+                        <img src="images/dmember-1.png" alt="member-1">
+                    </div>
+                    <p>Harak Hospitals</p>
+                </div>
+                <!---->
+                <div class="online-list">
+                    <!---->
+                    <div class="online">
+                        <img src="images/dmember-2.png" alt="member-1">
+                    </div>
+                    <p>Ozuoba Hospitals</p>
+                </div>
+                <!---->
+                <div class="online-list">
+                    <!---->
+                    <div class="online">
+                        <img src="images/dmember-3.png" alt="member-1">
+                    </div>
+                    <p>Jambutu Hospitals</p>
+                </div>
+                <!---->
+                <div class="online-list">
+                    <!---->
+                    <div class="online">
+                        <img src="images/dmember-4.png" alt="member-1">
+                    </div>
+                    <p>Avril Hospitals</p>
+                </div>
 
             </div>
+            
         </div>
+        <div class="footer">
+            <small>Copyright 2021 - Health Book</small>
+        </div>
+        
     </body>
 </html>
