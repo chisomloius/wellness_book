@@ -3,17 +3,42 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+}
+/*
+this root is added after first getting the backgtound 
+color on the body tag initially
+*/
+:root{
+    --body-color: rgb(239, 239, 239);
+    --nav-color: rgb(53, 35, 35);
+    --bg-color: #efefef;
     
 }
+.dark-theme{
+    --body-color: rgb(7, 7, 7);
+    --nav-color: rgb(0, 0, 0);
+    --bg-color: rgb(0, 0, 0);
+}
+
+/*
+the background color was rgb(239, 239, 239),
+it was change as a result of trying to achieve dark mode,
+same goes for nav-color, bg-color as seen in other classes.
+*/
 body{
-    background-color: rgb(239, 239, 239);
+    background-color: var(--body-color);
+    transition: background 0.2s;
+ 
 }
 nav{
     display: flex;
     align-items:  center;
     justify-content: space-between;
-    background: rgb(53, 35, 35);
+    background: var(--nav-color);
     padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .logo{
     width: 150px;
@@ -48,7 +73,7 @@ nav{
     padding: 0 10px;
 }
 .search-box img{
-    width: 19px;
+    width: 16px;
 }
 .search-box input{
     width: 100%;
@@ -87,7 +112,7 @@ nav{
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: #585656;
@@ -121,7 +146,7 @@ nav{
 .pra-leftside-links p{
     margin: 20px 0;
     color: #080606e8;
-    font-weight: 800px;
+    font-weight: 800;
     text-decoration-style: 10px solid;
 }
 .right-sidebar-title{
@@ -162,7 +187,7 @@ nav{
     height: 55px;
     width: 55px;
     margin-right: 10px;
-    margin-top:  2px;
+    padding-top:  2px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -256,7 +281,7 @@ nav{
 }
 .write-post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 6px;
     padding: 10px;
     color: #626262;
@@ -309,7 +334,7 @@ nav{
 }
 .post-container{
     width: 100%;
-    background-color: #fff;
+    background-color: var(--bg-color);
     border-radius: 5%;
     padding: 20px;
     color: #626262;
@@ -361,7 +386,7 @@ nav{
     border-radius: 50px;
     margin-right: 5px;
 }
-.post-text a{
+.post-reaction a{
     color: #9a9a9a;
 }
 .laod-more-btn{
@@ -380,14 +405,72 @@ nav{
     font-size: 15px;
 }
 .settings-menu{
-    position: relative;
+    position: absolute;
     width: 90%;
     max-width: 300px;
-    height: 500px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     overflow: hidden;
-    top: 108px;
+    top: 108%;
     right: 5%;
+    max-height: 0;
+    transition: max-height 0.2s;
+}
+.settings-menu-height{
+    max-height: 450px;
+}
+.user-profile a{
+    font-size: 12px;
+    color: rgb(53, 35, 35);
+    text-transform: none;
+}
+.settings-menu-inner{
+    padding: 20px;
+}
+.settings-menu-inner hr{
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+.settings-links{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.settings-links .settings-icon{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.settings-links a{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    color: #626262;
+}
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 40px;
+    border-radius: 12px;
+    padding: 2px 4px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.4s, background 0.4s;
+}
+#dark-btn span{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50px;
+    display: inline-block;
+}
+#dark-btn.dark-btn-on{
+    padding-left: 20px;
+    background: #0a0a0a;
 }

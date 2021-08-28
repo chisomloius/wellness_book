@@ -30,11 +30,11 @@
                         <li><img src='images/dnotification.png' alt='notifylogo'></li>
                         <li><img src='images/dinbox.png' alt='inboxlogo'></li>
                         <li><img src='images/dvideo.png' alt='discoverylogo'></li>
-                        <li><img src='images/donations' alt='donationlogo'></li>
+                        <li><img src='images/donation' alt='donationlogo'></li>
                     </ul>
                 </div>
-                <!--right nav tag -->
 
+                <!--right nav tag -->
                 <div class='nav-right'>
                     <!--div for search box-->
                     <div class="search-box">
@@ -44,25 +44,61 @@
                         <input type="text" placeholder="Search by">
                     </div>
                     <!--div for user icon-->
-                    <div class='nav-user-icon online'>
+                    <div class='nav-user-icon online' onclick="settingsMenuToggle()">
                         <!--image for user-->
                         <img src='images/dprofile-pic.png' alt='userlogo'>
                     </div>
+
                     <!--settings menu on nav tag-->
                 <div class="settings-menu">
-                    <div class="user-profile">
-                        <img src="images/dprofile-pic.png">
-                        <div>
-                            <p>Michaels Hospitals</p>
-                            <a href="#">see your profile</a>
+                    <!--settings for light and dark mode-->
+                    <div id="dark-btn">
+                        <span></span>
+                    </div>
+
+                    <!--settings for inner settings-->
+                    <div class="settings-menu-inner">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <a href="#">See your profile</a>
+                            </div>
                         </div>
-                    </div> 
+                        <hr>
+                        <div class="user-profile">
+                            <img src="images/dfeedback.png">
+                            <div>
+                                <p>Your Feedback</p>
+                                <a href="#">Help us improve new design</a>
+                            </div>
+                        </div> 
+                        <hr>
+                        <div class="settings-links">
+                            <img src="images/dsetting.png" alt="seticon" class="settings-icon">
+                            <a href="#">Settings & Privacy<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/dhelp.png" alt="helpicon" class="settings-icon">
+                            <a href="#">Help & Support<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/display.png" alt="displayicon" class="settings-icon">
+                            <a href="#">Display & Accessibility<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/dlogout.png" alt="logouticon" class="settings-icon">
+                            <a href="#">Logout<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                    </div>
+                    
                 </div>
                 </div>
                 
             </nav>
 
         <div class="container-1">
+
             <!--left sidebar of container-->
             <div class='left-sidebar'>
                 <div class="imp-leftside-links">
@@ -73,6 +109,7 @@
                     <a href='discoveries.html'><img src='images/dvideo.png' alt='discoverlogo'>Discoveries</a>
                     <a href='more.html'>See More</a>
                 </div>
+
                 <div class="pra-leftside-links">
                     <p>Professional Practices</p>
                     <a href="#"><img src='images/dpractice-1.png'>General Practice</a>
@@ -86,7 +123,6 @@
 
             <!--mainbar of container-->
             <div class='main-content'>
-            
                 <div class="story-gallery">
                     <div class="story story-1">
                         <img src="images/dupload.png" alt="">
@@ -120,9 +156,7 @@
                     </div>
                 
                     <div class="post-input-container">
-                        <textarea rows="3" placeholder="What's on your mind, Michales Hospitals">
-
-                        </textarea>
+                        <textarea rows="3" placeholder="What's on your mind, Michales Hospitals"></textarea>
                         <div class="add-post-links">
                             <a href="#"><img src="images/dlive-video.png">Live Video</a>
                             <a href="#"><img src="images/dphoto.png">Photo/Video</a>
@@ -133,7 +167,7 @@
 
                 <!--first post container-->
                 <div class="post-container">
-                    <div class="post-text">
+                    <div class="post-reaction">
                         <div class="user-profile">
                             <img src="images/dprofile-pic.png">
                             <div>
@@ -153,7 +187,7 @@
                         <div class="reaction-icon">
                             <div><img src="images/dlike-blue.png" alt="">120</div>
                             <div><img src="images/dcomments.png" alt="">130</div>
-                            <div><img src="images/ddonated.png" alt="">60</div>
+                            <div><img src="images/donation.png" alt="">60</div>
                         </div>
                         <div class="reaction-profile-icon">
                             <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
@@ -162,7 +196,7 @@
                 </div>
                 <!--second post container-->
                 <div class="post-container">
-                    <div class="post-text">
+                    <div class="post-reaction">
                         <div class="user-profile">
                             <img src="images/dprofile-pic.png">
                             <div>
@@ -170,7 +204,7 @@
                                 <span>Aug. 21 2021 13:00</span>
                             </div>
                         </div>
-                       
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                     </div>
                     
                     <p class="post-text">Remember <span>Green Dashcort?</span> with the help of your donation he was successfully
@@ -182,7 +216,7 @@
                         <div class="reaction-icon">
                             <div><img src="images/dlike-blue.png" alt="">1200</div>
                             <div><img src="images/dcomments.png" alt="">1000</div>
-                            <div><img src="images/ddonated.png" alt="">6000</div>
+                            <div><img src="images/donation.png" alt="">6000</div>
                         </div>
                         <div class="reaction-profile-icon">
                             <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
@@ -191,7 +225,7 @@
                 </div>
                 <!--third post container-->
                 <div class="post-container">
-                    <div class="post-text">
+                    <div class="post-reaction">
                         <div class="user-profile">
                             <img src="images/dprofile-pic.png">
                             <div>
@@ -212,7 +246,7 @@
                         <div class="reaction-icon">
                             <div><img src="images/dlike-blue.png" alt="">1200</div>
                             <div><img src="images/dcomments.png" alt="">1000</div>
-                            <div><img src="images/ddonated.png" alt="">6000</div>
+                            <div><img src="images/donation.png" alt="">6000</div>
                         </div>
                         <div class="reaction-profile-icon">
                             <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
@@ -221,7 +255,7 @@
                 </div>
                 <!--fourth post container-->
                 <div class="post-container">
-                    <div class="post-text">
+                    <div class="post-reaction">
                         <div class="user-profile">
                             <img src="images/dprofile-pic.png">
                             <div>
@@ -242,7 +276,7 @@
                         <div class="reaction-icon">
                             <div><img src="images/dlike-blue.png" alt="">1200</div>
                             <div><img src="images/dcomments.png" alt="">1000</div>
-                            <div><img src="images/ddonated.png" alt="">6000</div>
+                            <div><img src="images/donation.png" alt="">6000</div>
                         </div>
                         <div class="reaction-profile-icon">
                             <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
@@ -251,7 +285,7 @@
                 </div>
                 <!--fifth post container-->
                 <div class="post-container">
-                    <div class="post-text">
+                    <div class="post-reaction">
                         <div class="user-profile">
                             <img src="images/dprofile-pic.png">
                             <div>
@@ -272,7 +306,7 @@
                         <div class="reaction-icon">
                             <div><img src="images/dlike-blue.png" alt="">1200</div>
                             <div><img src="images/dcomments.png" alt="">1000</div>
-                            <div><img src="images/ddonated.png" alt="">6000</div>
+                            <div><img src="images/donation.png" alt="">6000</div>
                         </div>
                         <div class="reaction-profile-icon">
                             <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
@@ -281,7 +315,7 @@
                 </div>
                 <!--sixth post container-->
                 <div class="post-container">
-                    <div class="post-text">
+                    <div class="post-reaction">
                         <div class="user-profile">
                             <img src="images/dprofile-pic.png">
                             <div>
@@ -302,7 +336,7 @@
                         <div class="reaction-icon">
                             <div><img src="images/dlike-blue.png" alt="">1200</div>
                             <div><img src="images/dcomments.png" alt="">1000</div>
-                            <div><img src="images/ddonated.png" alt="">6000</div>
+                            <div><img src="images/donation.png" alt="">6000</div>
                         </div>
                         <div class="reaction-profile-icon">
                             <img src="images/dprofile-pic.png" alt=""><i class="fas fa-caret-down"></i>
@@ -321,27 +355,27 @@
                     <h4>Events</h4>
                     <a href="#">See All</a>
                 </div>
-                <!---->
-                <div class="event">
                     <!---->
-                    <div class="left-event">
-                        <h3>20</h3>
-                        <span>August</span>
+                    <div class="event">
+                        <!---->
+                        <div class="left-event">
+                            <h3>20</h3>
+                            <span>August</span>
+                        </div>
+                        <!---->
+                        <div class="right-event">
+                            <h4>Alor Hall</h4>
+                            <p><i class="fas-fa-map-marker-alt"></i>Alor E-Hospital Launch</p>
+                            <a href="#">More Info</a>
+                        </div>
                     </div>
                     <!---->
-                    <div class="right-event">
-                        <h4>Alor Hall</h4>
-                        <p><i class="fas-fa-map-marker-alt"></i>Alor E-Hospital Launch</p>
-                        <a href="#">More Info</a>
-                    </div>
-                </div>
-                <!---->
-                <div class="event">
-                    <!---->
-                    <div class="left-event">
-                        <h3>29</h3>
-                        <span>December</span>
-                    </div>
+                    <div class="event">
+                        <!---->
+                        <div class="left-event">
+                            <h3>29</h3>
+                            <span>December</span>
+                        </div>
                     <!---->
                     <div class="right-event">
                         <h4>Online</h4>
@@ -354,14 +388,14 @@
                     <h4>Advertisement</h4>
                     <a href="#">Close</a>
                 </div>
-                <img src="images\dadvertisement.png" alt="advert-1" class="sidebar-ads">
+                    <img src="images\dadvertisement.png" alt="advert-1" class="sidebar-ads">
                 
-                <!---->
+                <!--message section of the right sidebar-->
                 <div class="right-sidebar-title">
                     <h4>Conversation</h4>
                     <a href="#">Hide chat</a>
                 </div>
-                <!---->
+                <!--hospital one-->
                 <div class="online-list">
                     <!---->
                     <div class="online">
@@ -369,7 +403,7 @@
                     </div>
                     <p>Harak Hospitals</p>
                 </div>
-                <!---->
+                <!--hospital two-->
                 <div class="online-list">
                     <!---->
                     <div class="online">
@@ -377,7 +411,7 @@
                     </div>
                     <p>Ozuoba Hospitals</p>
                 </div>
-                <!---->
+                <!--hospital three-->
                 <div class="online-list">
                     <!---->
                     <div class="online">
@@ -385,7 +419,7 @@
                     </div>
                     <p>Jambutu Hospitals</p>
                 </div>
-                <!---->
+                <!--hospital four-->
                 <div class="online-list">
                     <!---->
                     <div class="online">
@@ -393,13 +427,20 @@
                     </div>
                     <p>Avril Hospitals</p>
                 </div>
-
+                <!--hospital five-->
+                <div class="online-list">
+                    <!---->
+                    <div class="online">
+                        <img src="images/dmember-4.png" alt="member-1">
+                    </div>
+                    <p>Avril Hospitals</p>
+                </div>
             </div>
             
         </div>
         <div class="footer">
             <small>Copyright 2021 - Health Book</small>
         </div>
-        
+        <script src="script.js"></script>
     </body>
 </html>

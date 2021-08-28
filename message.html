@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<head>
+    <!--language of the web page-->
+    <meta lang="en">
+    <!--encoding character of  webpage-->
+    <meta charset='UTF-8'>
+    <!--web browser compatibilty-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!--device browser compatibility-->
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <!--title of the website-->
+    <title>HealthBook - Social Channel for Healthcare and Patients' Best Wishes </title>
+    <!--link to image icon of the website-->
+    <link rel='icon' type='' href=''>
+    <!--link to the stylesheet for webpage-->
+    <link rel="stylesheet" type='text/css' href='main.css'>
+    <!--script to additional webbased-font on the internet, i.e Google Web-font-->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<html>
+    <body>
+        <!--nav tag-->
+        <nav>
+            <!--left nav tag-->
+            <div class='nav-left'>
+                <!---->
+                <img  src='images/dlogo.png' alt= 'weblogo' class='logo'>
+                <!---->
+                <ul>
+                    <li><img src='images/dnotification.png' alt='notifylogo'></li>
+                    <li><img src='images/dinbox.png' alt='inboxlogo'></li>
+                    <li><img src='images/dvideo.png' alt='discoverylogo'></li>
+                    <li><img src='images/donation' alt='donationlogo'></li>
+                </ul>
+            </div>
+
+            <!--right nav tag -->
+            <div class='nav-right'>
+                <!--div for search box-->
+                <div class="search-box">
+                    <!--image for search box-->
+                    <img src='images/dsearch.png' alt='searchlogo'>
+                    <!--form input for search box-->
+                    <input type="text" placeholder="Search by">
+                </div>
+                <!--div for user icon-->
+                <div class='nav-user-icon online' onclick="settingsMenuToggle()">
+                    <!--image for user-->
+                    <img src='images/dprofile-pic.png' alt='userlogo'>
+                </div>
+
+                <!--settings menu on nav tag-->
+            <div class="settings-menu">
+                <!--settings for light and dark mode-->
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <!--settings for inner settings-->
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/dprofile-pic.png">
+                        <div>
+                            <p>Michaels Hospitals</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/dfeedback.png">
+                        <div>
+                            <p>Your Feedback</p>
+                            <a href="#">Help us improve new design</a>
+                        </div>
+                    </div> 
+                    <hr>
+                    <div class="settings-links">
+                        <img src="images/dsetting.png" alt="seticon" class="settings-icon">
+                        <a href="#">Settings & Privacy<img src="images/darrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/dhelp.png" alt="helpicon" class="settings-icon">
+                        <a href="#">Help & Support<img src="images/darrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/display.png" alt="displayicon" class="settings-icon">
+                        <a href="#">Display & Accessibility<img src="images/darrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/dlogout.png" alt="logouticon" class="settings-icon">
+                        <a href="#">Logout<img src="images/darrow.png" width="10px"></a>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+        </nav>
+
+        <img src='images/3.PNG' alt="advertlogo" class="sidebar-ads">
+
+
+        <div class="footer">
+            <small>Copyright 2021 - Health Book</small>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
