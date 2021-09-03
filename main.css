@@ -40,9 +40,20 @@ nav{
     top: 0;
     z-index: 100;
 }
+.home-icon{
+    display: flex;
+    align-items: baseline;
+    float: left;
+}
 .logo{
     width: 150px;
-    margin-right: 40px;
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo a{
+    text-decoration: none;
+    color: #ccc;
 }
 .nav-left, .nav-right{
     display: flex;
@@ -81,6 +92,16 @@ nav{
     padding: 10px;
     outline: none;
     border: 0;
+}
+.login-icon{
+    display: flex;
+    position: relative;
+}
+.login-icon button{
+    color: #585656;
+    text-decoration: none;
+    padding: 5px 5%;
+    margin: 0 4px;
 }
 .online{
     position: relative;

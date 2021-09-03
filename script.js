@@ -34,3 +34,6 @@ else if(localStorage.getItem("theme") == "dark"){
 else{
     localStorage.setItem("theme", "light");
 }
+
+// Javascript code for Login Button
+let loginMenu = document.toggle(".inner-login-icon");
