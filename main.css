@@ -1,3 +1,4 @@
+/* general css */
 *{
     margin: 0;
     padding: 0;
@@ -55,6 +56,9 @@ nav{
     text-decoration: none;
     color: #ccc;
 }
+.logo a:hover {
+    color: rgb(65, 35, 65);
+}
 .nav-left, .nav-right{
     display: flex;
     align-items: center;
@@ -95,13 +99,15 @@ nav{
 }
 .login-icon{
     display: flex;
-    position: relative;
+    align-items: center;
 }
-.login-icon button{
-    color: #585656;
+.login-icon a{
     text-decoration: none;
-    padding: 5px 5%;
-    margin: 0 4px;
+    position: relative;
+    padding: 5px 10px;
+    width: 20px;
+    color: #ccc;
+    font-size: 80%;
 }
 .online{
     position: relative;
@@ -494,4 +500,35 @@ nav{
 #dark-btn.dark-btn-on{
     padding-left: 20px;
     background: #0a0a0a;
+}
+
+/* css for login page*/
+.forms-pages{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: url(images/healthpost.jpg);
+    background-size: cover;
+    background-position: cover;
+    font-family: sans-serif;
+}
+.login-form{
+    width: 300px;
+    height: 400px;
+    background: #201414;
+    color: #585656;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50px, -50px);
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+.login-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
 }

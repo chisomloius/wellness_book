@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!--language of the web page-->
-        <meta lang="en">
         <!--encoding character of  webpage-->
         <meta charset='UTF-8'>
         <!--web browser compatibilty-->
@@ -19,89 +17,90 @@
         <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     </head>
     <body>
-            <!--nav tag-->
-            <nav>
-                <!--left nav tag-->
-                <div class='nav-left'>
-                    <!--div for home icon-->
-                    <div class="home-icon">
-                        <h2 class="logo"><a href="index.html">HealthBOOK</a></h2>
-                    </div>
-                    <!--other nav bar icons-->
-                    <ul>
-                        <li><a href="/news.html"><img src='images/dnotification.png' alt='notifylogo'></a></li>
-                        <li><a href="message.html"><img src='images/dinbox.png' alt='inboxlogo'></a></li>
-                        <li><a href="video.html"><img src='images/dvideo.png' alt='discoverylogo'></a></li>
-                        <li><a href="donate.html"><img src='images/donation' alt='donationlogo'></a></li>
-                    </ul>
+        <!--nav tag-->
+        <nav>
+            <!--left nav tag-->
+            <div class='nav-left'>
+                <!--div for home icon-->
+                <div class="home-icon">
+                    <h2 class="logo"><a href="index.html">HealthBOOK</a></h2>
+                </div>
+                <!--other nav bar icons-->
+                <ul>
+                    <li><a href="/news.html"><img src='images/dnotification.png' alt='notifylogo'></a></li>
+                    <li><a href="message.html"><img src='images/dinbox.png' alt='inboxlogo'></a></li>
+                    <li><a href="video.html"><img src='images/dvideo.png' alt='discoverylogo'></a></li>
+                    <li><a href="donate.html"><img src='images/donation' alt='donationlogo'></a></li>
+                </ul>
+            </div>
+
+            <!--right nav tag -->
+            <div class='nav-right'>
+                <!--div for search box-->
+                <div class="search-box">
+                    <!--image for search box-->
+                    <img src='images/dsearch.png' alt='searchlogo'>
+                    <!--form input for search box-->
+                    <input type="text" placeholder="Search by">
+                </div>
+                <!--div for login-->
+                <div class="login-icon">
+                   <h2><a href="login.html">Login</a></h2>
+                    
+                </div>
+                <!--div for user icon-->
+                <div class='nav-user-icon online' onclick="settingsMenuToggle()">
+                    <!--image for user-->
+                    <img src='images/dprofile-pic.png' alt='userlogo'>
                 </div>
 
-                <!--right nav tag -->
-                <div class='nav-right'>
-                    <!--div for search box-->
-                    <div class="search-box">
-                        <!--image for search box-->
-                        <img src='images/dsearch.png' alt='searchlogo'>
-                        <!--form input for search box-->
-                        <input type="text" placeholder="Search by">
-                    </div>
-                    <!--div for login-->
-                    <div class="login-icon">
-                        <h4><button class="inner-login-icon">Login</button></h4>
-                    </div>
-                    <!--div for user icon-->
-                    <div class='nav-user-icon online' onclick="settingsMenuToggle()">
-                        <!--image for user-->
-                        <img src='images/dprofile-pic.png' alt='userlogo'>
+                <!--settings menu on nav tag-->
+                <div class="settings-menu">
+                    <!--settings for light and dark mode-->
+                    <div id="dark-btn">
+                        <span></span>
                     </div>
 
-                    <!--settings menu on nav tag-->
-                    <div class="settings-menu">
-                        <!--settings for light and dark mode-->
-                        <div id="dark-btn">
-                            <span></span>
-                        </div>
-
-                        <!--settings for inner settings-->
-                        <div class="settings-menu-inner">
-                            <div class="user-profile">
-                                <img src="images/dprofile-pic.png">
-                                <div>
-                                    <p>Michaels Hospitals</p>
-                                    <a href="#">See your profile</a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="user-profile">
-                                <img src="images/dfeedback.png">
-                                <div>
-                                    <p>Your Feedback</p>
-                                    <a href="#">Help us improve new design</a>
-                                </div>
-                            </div> 
-                            <hr>
-                            <div class="settings-links">
-                                <img src="images/dsetting.png" alt="seticon" class="settings-icon">
-                                <a href="#">Settings & Privacy<img src="images/darrow.png" width="10px"></a>
-                            </div>
-                            <div class="settings-links">
-                                <img src="images/dhelp.png" alt="helpicon" class="settings-icon">
-                                <a href="#">Help & Support<img src="images/darrow.png" width="10px"></a>
-                            </div>
-                            <div class="settings-links">
-                                <img src="images/display.png" alt="displayicon" class="settings-icon">
-                                <a href="#">Display & Accessibility<img src="images/darrow.png" width="10px"></a>
-                            </div>
-                            <div class="settings-links">
-                                <img src="images/dlogout.png" alt="logouticon" class="settings-icon">
-                                <a href="#">Logout<img src="images/darrow.png" width="10px"></a>
+                    <!--settings for inner settings-->
+                    <div class="settings-menu-inner">
+                        <div class="user-profile">
+                            <img src="images/dprofile-pic.png">
+                            <div>
+                                <p>Michaels Hospitals</p>
+                                <a href="#">See your profile</a>
                             </div>
                         </div>
-                        
+                        <hr>
+                        <div class="user-profile">
+                            <img src="images/dfeedback.png">
+                            <div>
+                                <p>Your Feedback</p>
+                                <a href="#">Help us improve new design</a>
+                            </div>
+                        </div> 
+                        <hr>
+                        <div class="settings-links">
+                            <img src="images/dsetting.png" alt="seticon" class="settings-icon">
+                            <a href="#">Settings & Privacy<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/dhelp.png" alt="helpicon" class="settings-icon">
+                            <a href="#">Help & Support<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/display.png" alt="displayicon" class="settings-icon">
+                            <a href="#">Display & Accessibility<img src="images/darrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/dlogout.png" alt="logouticon" class="settings-icon">
+                            <a href="#">Logout<img src="images/darrow.png" width="10px"></a>
+                        </div>
                     </div>
+                    
                 </div>
-                
-            </nav>
+            </div>
+            
+        </nav>
 
         <div class="container-1">
 
@@ -132,7 +131,7 @@
                 <div class="story-gallery">
                     <div class="story story-1">
                         <img src="images/dupload.png" alt="">
-                        <p>Miracle Story</p>
+                        <p>Miracle Storyk</p>
                     </div>
                     <div class="story story-2">
                         <img src="images/dmember-1.png" alt="">
@@ -445,7 +444,7 @@
             
         </div>
         <div class="footer">
-            <small>Copyright 2021 - Health Book</small>
+            <small>Copyright 2021 - HealthBOOK.africa</small>
         </div>
         <script src="script.js"></script>
     </body>

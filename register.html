@@ -44,30 +44,32 @@
 
         </nav>
 
-        <div class="forms-pages">
-            <div class="login-form">
-                <img src="images/dstatus-1.png" class="login-image">
-                <h2>Login Here</h2>
-                <!--the form-box for login-->
-                <form action="" class="input-group-login">
-                    <p>Username</p>
-                    <input type="text" name="" class="input-field" placeholder="Email/Hospital Name" required>
-                    <p>Password</p>
-                    <input type="password" name="" class="input-field" placeholder="Enter Password" required>
-                    <input type="checkbox" name="" class="checkbox"><span class="span=form">Keep me login</span>
-                    <input type="submit" name="" class="submit-btn" value="Login">
-                    <a href="reset.html">Lost your password</a>
-                    <a href="register.html">Don't have an account</a>
+        <div class="forms-page">
+            <div class="register-page">
+                <!--the form-box for register-->
+                <form action="" id="register" class="input-group-register">
+                    <input type="text" name="Hospital Name" class="input-field" placeholder="Hospital Name" required>
+                    <select name="Hospital Type" class="input-field">
+                        <option value="Research Hospital">Research Hospital</option>
+                        <option value="State Hospital">State Hospital</option>
+                        <option value="PHCs" selected>PHCs</option>
+                        <option value="Private Clinic">Private Clinic</option>
+                        <option value="Morturary">Morturary</option>
+                        <option value="Medical Laboratory">Medical Laboratory</option>
+                    </select>
+                    <input type="text" name="Email ID" class="input-field" placeholder="Email ID" required>
+                    <input type="text" name="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="text" name="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" name="Remember Password"class="checkbox"><span class="span=form">I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                    <button type="reset" class="submit-btn">Reset</button>
                 </form>
-                
             </div>
-            
         </div>
-                
 
 
         <div class="footer">
-            <small>Copyright 2021 - HealthBOOK.africa</small>
+            <small>Copyright 2021 - HealthBOOK</small>
         </div>
         <script src="script.js"></script>
 
