@@ -41,24 +41,6 @@ nav{
     top: 0;
     z-index: 100;
 }
-.home-icon{
-    display: flex;
-    align-items: baseline;
-    float: left;
-}
-.logo{
-    width: 150px;
-    margin-right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-.logo a{
-    text-decoration: none;
-    color: #ccc;
-}
-.logo a:hover {
-    color: rgb(65, 35, 65);
-}
 .nav-left, .nav-right{
     display: flex;
     align-items: center;
@@ -66,6 +48,16 @@ nav{
 .nav-left ul li{
     list-style: none;
     display: inline-block;
+}
+.nav-left h2 a{
+    width: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-left h2 a:hover {
+    color: rgb(65, 35, 65);
 }
 .nav-left ul li img{
     width: 30px;
@@ -102,12 +94,11 @@ nav{
     align-items: center;
 }
 .login-icon a{
-    text-decoration: none;
-    position: relative;
-    padding: 5px 10px;
+    margin-left: 20px;
     width: 20px;
-    color: #ccc;
-    font-size: 80%;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
 }
 .online{
     position: relative;
@@ -507,14 +498,12 @@ nav{
     display: flex;
     margin: 0;
     padding: 0;
-    background: url(images/healthpost.jpg);
+    background: url(images/healthavatar.jpg);
     background-size: cover;
     background-position: cover;
     font-family: sans-serif;
 }
-.login-form{
-    width: 300px;
-    height: 400px;
+.login-form, .register-form{
     background: #201414;
     color: #fff;
     top: 50%;
@@ -526,6 +515,14 @@ nav{
     margin-top: 50px;
     border-radius: 10px;
 }
+.login-form {
+    width: 300px;
+    height: 400px;
+}
+.register-form{
+    width: 300px;
+    height: 450px;
+}
 .login-image{
     width: 100px;
     height: 100px;
@@ -534,18 +531,17 @@ nav{
     top: -50px;
     left: calc(50% - 50px);
 }
-h2{
+.login-form h2, .register-form h2{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 20px;
 }
-.login-form p{
+.login-form p, .register-form p{
     margin: 0;
     padding: 0;
     font-weight: bold;
 }
-
 .input-field{
     width: 100%;
     margin-bottom: 10px;
@@ -570,7 +566,7 @@ h2{
     font-size: 18px;
     border-radius: 20px;
 }
-.input-group-login input[type='submit']:hover{
+.input-group-login input[type='submit']:hover {
     cursor: pointer;
     background: rgb(224, 190, 190);
     color: #000;
@@ -583,4 +579,8 @@ h2{
 }
 .input-group-login a:hover{
     color: #ffc1ff;
+}
+.input-group-login p{
+    color: #2e2a2a;
+    font-size: 15px;
 }
