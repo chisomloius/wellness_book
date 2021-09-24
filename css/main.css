@@ -41,6 +41,10 @@ nav{
     top: 0;
     z-index: 100;
 }
+.logo{
+    width: 50%;
+    margin-left: 12px;
+}
 .nav-left, .nav-right{
     display: flex;
     align-items: center;
@@ -55,6 +59,7 @@ nav{
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    text-align: center;
 }
 .nav-left h2 a:hover {
     color: rgb(65, 35, 65);
@@ -63,6 +68,7 @@ nav{
     width: 30px;
     margin: 0 12px
 }
+
 .nav-user-icon img{
     width: 40px;
     border-radius: 50%;
@@ -88,17 +94,6 @@ nav{
     padding: 10px;
     outline: none;
     border: 0;
-}
-.login-icon{
-    display: flex;
-    align-items: center;
-}
-.login-icon a{
-    margin-left: 20px;
-    width: 20px;
-    font-size: 30px;
-    color: #fff;
-    text-decoration: none;
 }
 .online{
     position: relative;
